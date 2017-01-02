@@ -34,7 +34,7 @@ import { Ng2AutoComplete } from "./ng2-auto-complete";
     <ul *ngIf="dropdownVisible"
         [style.bottom]="inputEl.style.height"
         [style.position]="closeToBottom ? 'absolute': ''">
-      <li *ngIf="isLoading" class="loading">{{loadingText}}</li>
+      <!-- <li *ngIf="isLoading" class="loading">{{loadingText}}</li> -->
       <li *ngIf="!isLoading && !filteredList.length">No Match Found</li>
       <li *ngIf="blankOptionText && filteredList.length"
           (mousedown)="selectOne('')"
