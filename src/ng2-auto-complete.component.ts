@@ -40,9 +40,9 @@ import { Ng2AutoComplete } from "./ng2-auto-complete";
           (mousedown)="selectOne('')"
           class="blank-item">{{blankOptionText}}</li>
       <li class="item"
-          *ngFor="let item of filteredList; let i=index"
+          *ngFor="let item of filteredList; let i=index; let odd=odd; let even=even"
           (mousedown)="selectOne(item)"
-          [ngClass]="{selected: i === itemIndex}"
+          [ngClass]="{selected: i === itemIndex, odd: odd, even: even}"
           [innerHtml]="getFormattedList(item)">
       </li>
     </ul>

@@ -150,11 +150,11 @@ var Ng2AutoCompleteDirective = (function () {
                 },] },
     ];
     /** @nocollapse */
-    Ng2AutoCompleteDirective.ctorParameters = [
+    Ng2AutoCompleteDirective.ctorParameters = function () { return [
         { type: core_1.ComponentFactoryResolver, },
         { type: core_1.Renderer, },
         { type: core_1.ViewContainerRef, },
-    ];
+    ]; };
     Ng2AutoCompleteDirective.propDecorators = {
         'autoCompletePlaceholder': [{ type: core_1.Input, args: ["auto-complete-placeholder",] },],
         'listFormatter': [{ type: core_1.Input, args: ["list-formatter",] },],
